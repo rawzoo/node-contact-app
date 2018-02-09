@@ -40,7 +40,7 @@ const addContact = (contact) => {
  * @returns {Json} contacts
  */
 const getContact = (name) => {
-  // Define search criteria
+ 
   const search = new RegExp(name, 'i');
 
   Contact.find({$or: [{firstname: search }, {lastname: search }]})
